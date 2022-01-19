@@ -1,6 +1,13 @@
+import java.util.*;
+
 public class ReverseArray {
     public static void main(String[] args) {
-        int[] array = new int[5];
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter the number of elements in the array: ");
+        int number = Integer.parseInt(scan.nextLine());
+
+        int[] array = new int[number];
         int min = 0;
         int max = 100;
         int temp;
